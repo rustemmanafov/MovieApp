@@ -17,6 +17,11 @@
 		46E8642328C1FAFC0019F4A1 /* NetworkHelper.swift in Sources */ = {isa = PBXBuildFile; fileRef = 46E8642228C1FAFC0019F4A1 /* NetworkHelper.swift */; };
 		46E8642628C1FB420019F4A1 /* MovieManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = 46E8642528C1FB420019F4A1 /* MovieManager.swift */; };
 		46E8642E28C1FC120019F4A1 /* ListOfMovieGenres.swift in Sources */ = {isa = PBXBuildFile; fileRef = 46E8642D28C1FC120019F4A1 /* ListOfMovieGenres.swift */; };
+		46E8643128C2003B0019F4A1 /* OnboardingController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 46E8643028C2003B0019F4A1 /* OnboardingController.swift */; };
+		46E8643328C200560019F4A1 /* OnboardingViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 46E8643228C200560019F4A1 /* OnboardingViewCell.swift */; };
+		46E8643628C203870019F4A1 /* OnboardingModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 46E8643528C203870019F4A1 /* OnboardingModel.swift */; };
+		46E8643828C206010019F4A1 /* joker.jpg in Resources */ = {isa = PBXBuildFile; fileRef = 46E8643728C206010019F4A1 /* joker.jpg */; };
+		46E8643A28C20A310019F4A1 /* goodfather.jpg in Resources */ = {isa = PBXBuildFile; fileRef = 46E8643928C20A310019F4A1 /* goodfather.jpg */; };
 		545F99BE01E9007A00F6C5E4 /* Pods_MovieApp.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = C656668B15765520066D63A7 /* Pods_MovieApp.framework */; };
 /* End PBXBuildFile section */
 
@@ -34,6 +39,11 @@
 		46E8642228C1FAFC0019F4A1 /* NetworkHelper.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NetworkHelper.swift; sourceTree = "<group>"; };
 		46E8642528C1FB420019F4A1 /* MovieManager.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MovieManager.swift; sourceTree = "<group>"; };
 		46E8642D28C1FC120019F4A1 /* ListOfMovieGenres.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ListOfMovieGenres.swift; sourceTree = "<group>"; };
+		46E8643028C2003B0019F4A1 /* OnboardingController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = OnboardingController.swift; sourceTree = "<group>"; };
+		46E8643228C200560019F4A1 /* OnboardingViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = OnboardingViewCell.swift; sourceTree = "<group>"; };
+		46E8643528C203870019F4A1 /* OnboardingModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = OnboardingModel.swift; sourceTree = "<group>"; };
+		46E8643728C206010019F4A1 /* joker.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = joker.jpg; sourceTree = "<group>"; };
+		46E8643928C20A310019F4A1 /* goodfather.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = goodfather.jpg; sourceTree = "<group>"; };
 		ADA5FB61CE8AF9C431B64E3A /* Pods-MovieApp.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-MovieApp.debug.xcconfig"; path = "Target Support Files/Pods-MovieApp/Pods-MovieApp.debug.xcconfig"; sourceTree = "<group>"; };
 		C656668B15765520066D63A7 /* Pods_MovieApp.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_MovieApp.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 /* End PBXFileReference section */
@@ -82,6 +92,7 @@
 			children = (
 				46E8640728C1EE250019F4A1 /* AppDelegate.swift */,
 				46E8640928C1EE250019F4A1 /* SceneDelegate.swift */,
+				46E8642F28C200190019F4A1 /* Onboarding */,
 				46E8641E28C1FAAD0019F4A1 /* Network */,
 				46E8642728C1FB530019F4A1 /* Helper */,
 				46E8642828C1FB690019F4A1 /* Scenes */,
@@ -90,6 +101,8 @@
 				46E8641528C1EE270019F4A1 /* LaunchScreen.storyboard */,
 				46E8641828C1EE280019F4A1 /* Info.plist */,
 				46E8641028C1EE250019F4A1 /* MovieApp.xcdatamodeld */,
+				46E8643728C206010019F4A1 /* joker.jpg */,
+				46E8643928C20A310019F4A1 /* goodfather.jpg */,
 			);
 			path = MovieApp;
 			sourceTree = "<group>";
@@ -167,6 +180,24 @@
 			path = Cell;
 			sourceTree = "<group>";
 		};
+		46E8642F28C200190019F4A1 /* Onboarding */ = {
+			isa = PBXGroup;
+			children = (
+				46E8643028C2003B0019F4A1 /* OnboardingController.swift */,
+				46E8643228C200560019F4A1 /* OnboardingViewCell.swift */,
+				46E8643428C2036A0019F4A1 /* Model */,
+			);
+			path = Onboarding;
+			sourceTree = "<group>";
+		};
+		46E8643428C2036A0019F4A1 /* Model */ = {
+			isa = PBXGroup;
+			children = (
+				46E8643528C203870019F4A1 /* OnboardingModel.swift */,
+			);
+			path = Model;
+			sourceTree = "<group>";
+		};
 		E4D8AD14B094E2CDDF69D194 /* Frameworks */ = {
 			isa = PBXGroup;
 			children = (
@@ -235,9 +266,11 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				46E8643A28C20A310019F4A1 /* goodfather.jpg in Resources */,
 				46E8641728C1EE270019F4A1 /* LaunchScreen.storyboard in Resources */,
 				46E8641428C1EE270019F4A1 /* Assets.xcassets in Resources */,
 				46E8640F28C1EE250019F4A1 /* Main.storyboard in Resources */,
+				46E8643828C206010019F4A1 /* joker.jpg in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -294,6 +327,9 @@
 				46E8640828C1EE250019F4A1 /* AppDelegate.swift in Sources */,
 				46E8642328C1FAFC0019F4A1 /* NetworkHelper.swift in Sources */,
 				46E8642E28C1FC120019F4A1 /* ListOfMovieGenres.swift in Sources */,
+				46E8643128C2003B0019F4A1 /* OnboardingController.swift in Sources */,
+				46E8643328C200560019F4A1 /* OnboardingViewCell.swift in Sources */,
+				46E8643628C203870019F4A1 /* OnboardingModel.swift in Sources */,
 				46E8641228C1EE250019F4A1 /* MovieApp.xcdatamodeld in Sources */,
 				46E8642628C1FB420019F4A1 /* MovieManager.swift in Sources */,
 				46E8640A28C1EE250019F4A1 /* SceneDelegate.swift in Sources */,
