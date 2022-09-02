@@ -30,8 +30,7 @@ class OnboardingController: UIViewController {
         super.viewDidLoad()
         
         slides = [
-            OnboardingSlide(description: "Watch TV shows and movies anytime, anywhere & whenever you want.", image: "joker.jpg"),
-            
+            OnboardingSlide(description: "And in the end, all I learned was how to be strong, alone.", image: "joker.jpg"),
             OnboardingSlide(description: "Not every successful man is a good father. But every good father is a successful man.", image: "goodfather.jpg")
         ]
     
@@ -43,7 +42,7 @@ class OnboardingController: UIViewController {
             let controller = storyboard?.instantiateViewController(identifier: "loginNav") as! UINavigationController
             controller.modalPresentationStyle = .fullScreen
             controller.modalTransitionStyle = .flipHorizontal
-            //UserDefaults.standard.hasOnboarded = true
+            UserDefaults.standard.hasOnboarded = true
             present(controller, animated: true, completion: nil)
         } else {
             currentPage += 1
