@@ -1,0 +1,30 @@
+PODS:
+  - Alamofire (5.6.2)
+  - KeychainSwift (20.0.0)
+  - ProgressHUD (13.6)
+  - SDWebImage (5.13.2):
+    - SDWebImage/Core (= 5.13.2)
+  - SDWebImage/Core (5.13.2)
+
+DEPENDENCIES:
+  - Alamofire
+  - KeychainSwift (~> 20.0)
+  - ProgressHUD
+  - SDWebImage (~> 5.0)
+
+SPEC REPOS:
+  trunk:
+    - Alamofire
+    - KeychainSwift
+    - ProgressHUD
+    - SDWebImage
+
+SPEC CHECKSUMS:
+  Alamofire: d368e1ff8a298e6dde360e35a3e68e6c610e7204
+  KeychainSwift: 0ce6a4d13f7228054d1a71bb1b500448fb2ab837
+  ProgressHUD: 4bdaa0d2ddf676b23324b199f9facffb5c3a1620
+  SDWebImage: 72f86271a6f3139cc7e4a89220946489d4b9a866
+
+PODFILE CHECKSUM: 30df1ead615dd39a68520c809f22d75d47fda5da
+
+COCOAPODS: 1.11.3
